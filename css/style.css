@@ -17,6 +17,12 @@ header{
     border: solid 1px #E5E8EB;
 }
 
+header a{
+    color: #0D1C12;
+    font-family: "Newsreader", serif;
+    text-decoration: none;
+}
+
 header>div{
     max-width: 1280px;
     display: flex;
@@ -25,8 +31,7 @@ header>div{
     align-items: center;
 }
 
-header>div>p{
-    font-family: "Newsreader", serif;
+header>div>a{
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
@@ -61,18 +66,36 @@ header>div>div>article>input{
 }
 
 header>div>div>a{
-    color: #0D1C12;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 14px;
-    font-family: "Newsreader",serif;
     font-weight: 700;
     padding: 16px;
     border-radius: 20px;
-    text-decoration: none;
     transition: var(--transition05)
 }
 header>div>div>a:hover{
         background-color: rgba(128, 128, 128, 0.5);
         transition: var(--transition05)
     }
+
+
+/* Footer */
+
+
+footer p{
+    color: #4F966E;
+    font-family: "Newsreader", serif ;
+    font-size: 16px;
+}
+
+footer>div{
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+}
+
+footer>div>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
