@@ -1,0 +1,78 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --transition05: all 0.5s ease;
+}
+
+*{
+    margin: 0;
+}
+
+/* Header */
+
+
+header{
+    border: solid 1px #E5E8EB;
+}
+
+header>div{
+    max-width: 1280px;
+    display: flex;
+    margin: 8px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div>p{
+    font-family: "Newsreader", serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+header>div>div{
+    display: flex;
+    align-items: center;
+}
+
+header>div>div>button{
+    margin-left: 20px;
+}
+
+header>div>div>article{
+    background-color: #E8F2ED;
+}
+header>div>div>article button, input{
+    border: none;
+    background-color: #ffffff00;
+    
+}
+
+header>div>div>article button,input::placeholder{
+    color: #4F966E;
+    font-family: "Newsreader", serif;
+    font-size: 16px;
+}
+
+header>div>div>article>input{
+    max-width: 192px;
+}
+
+header>div>div>a{
+    color: #0D1C12;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 14px;
+    font-family: "Newsreader",serif;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: var(--transition05)
+}
+header>div>div>a:hover{
+        background-color: rgba(128, 128, 128, 0.5);
+        transition: var(--transition05)
+    }
