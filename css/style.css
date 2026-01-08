@@ -8,6 +8,7 @@
 
 *{
     margin: 0;
+    font-family: "Newsreader", serif;
 }
 
 /* Header */
@@ -19,7 +20,6 @@ header{
 
 header a{
     color: #0D1C12;
-    font-family: "Newsreader", serif;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ header>div>div>article button, input{
 
 header>div>div>article button,input::placeholder{
     color: #4F966E;
-    font-family: "Newsreader", serif;
+    
     font-size: 16px;
 }
 
@@ -78,6 +78,29 @@ header>div>div>a:hover{
         background-color: rgba(128, 128, 128, 0.5);
         transition: var(--transition05)
     }
+
+/* Main */
+
+main>#section1{
+    margin: auto;
+    max-width: 928px;
+    max-height: 480px;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/background_Writer_Acc.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 12px;
+}
+
+main>#section1>article{
+    max-width: 848px;
+    color: white;
+}
+
+main>#section1>article,main>#section1>a{
+    margin-left: 70px;
+}
 
 
 /* Footer */
