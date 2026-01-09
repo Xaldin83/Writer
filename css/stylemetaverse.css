@@ -31,11 +31,15 @@ a{
     font-size: 14px;
 }
 
+input{
+    outline:none;
+}
+
 /* Header */
 
 
 header{
-    border: solid 1px #E5E8EB;
+    border-bottom: solid 1px #E5E8EB;
 }
 
 header a{
@@ -100,6 +104,48 @@ header>div>div>a:hover{
 
 /* Main */
 
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+main>h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+main>img{
+    object-fit: cover;
+    width: 780px;
+    height: 217px;
+    object-position: 0px -70px;
+}
+
+
+main>div{
+    display: grid;
+    grid-template-columns: 883px;
+    margin-top: 30px;
+    
+}
+
+main>div>h2{
+    text-align: center;
+    color: #0D1C12;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+main>div>p{
+    color: #696969;
+    font-size: 16px;
+    margin-bottom: 60px;
+    line-height: 24px;
+}
 
 /* Footer */
 
