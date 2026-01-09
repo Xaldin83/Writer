@@ -15,6 +15,7 @@ a{
     text-decoration: none;
 }
 
+
 input{
     outline:none;
 }
@@ -33,7 +34,7 @@ header a{
 header>div{
     max-width: 1280px;
     display: flex;
-    margin: 8px auto;
+    margin: 15px auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -59,10 +60,26 @@ header>div>#log:hover{
     }
 
 
+/* Main */
+
+main{
+    display: grid;
+    grid-template-columns: 512px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+main>h1{
+    color: #0D1C12;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
 /* Footer */
 
 footer *{color: #4F966E;
-margin-bottom: 30px;}
+margin-bottom: 10px;}
 
 footer p{
     font-family: "Newsreader", serif ;
@@ -81,4 +98,8 @@ footer>div>div{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     
+}
+
+footer a{
+    margin: 0;
 }
