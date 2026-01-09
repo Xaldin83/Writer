@@ -23,6 +23,14 @@ a{
 
 }
 
+.ReadMore2{
+    color: #0D1C12;
+    background-color: #1AE570;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 14px;
+}
+
 /* Header */
 
 
@@ -96,7 +104,6 @@ main>#section1{
     margin: auto;
     max-width: 928px;
     max-height: 480px;
-    padding-top: 200px;
     background-image: url(/img/background_Writer_Acc.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -105,7 +112,9 @@ main>#section1{
 
 
 main>#section1>div{
-    background: linear-gradient(0.25turn,#0000001A,#00000066);
+    background: linear-gradient(#0000001A,#00000066);
+    padding: 130px 0 5px  0;
+
 }
 
 main>#section1>div>div{
