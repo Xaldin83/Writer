@@ -42,7 +42,6 @@ header>div{
 header>div>a{
     font-size: 18px;
     font-weight: 700;
-    text-transform: capitalize;
 }
 
 header>div>#log{
@@ -66,7 +65,7 @@ main{
     display: grid;
     grid-template-columns: 512px;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px auto ;
 }
 
 main>h1{
@@ -76,6 +75,68 @@ main>h1{
     text-align: center;
 }
 
+main>form{
+    display: grid;
+}
+
+main>form>label{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+main>form>input{
+    color: #4F966E;
+    border: none;
+    padding: 20px;
+    
+    &::placeholder{
+        color: #4F966E;
+        font-size: 16px sans-serif;
+    }
+}
+
+main>form>div{
+    display: flex;
+    gap: 10px;
+}
+
+main>form>div>input{
+    color: #4F966E;
+}
+
+main>form>button{
+    padding: 16px;
+    background-color:#1AE570;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+
+main>div>p{
+    color: #393939;
+    font-size: 14px;    
+    margin-bottom: 40px;
+
+}
+
+main>div>a{
+    padding: 16px;
+    background-color:#E5E8EB;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
 /* Footer */
 
 footer *{color: #4F966E;
