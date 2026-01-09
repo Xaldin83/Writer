@@ -11,6 +11,18 @@
     font-family: "Newsreader", serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+.ReadMore{
+    color: #0D1C12;
+    background-color: #1AE570;
+    border-radius: 24px;
+    padding: 20px;
+
+}
+
 /* Header */
 
 
@@ -20,7 +32,6 @@ header{
 
 header a{
     color: #0D1C12;
-    text-decoration: none;
 }
 
 header>div{
@@ -85,23 +96,42 @@ main>#section1{
     margin: auto;
     max-width: 928px;
     max-height: 480px;
-    height: 100%;
-    width: 100%;
+    padding-top: 200px;
     background-image: url(/img/background_Writer_Acc.png);
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 12px;
 }
 
-main>#section1>article{
-    max-width: 848px;
+
+main>#section1>div{
     color: white;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 40px;
+    margin: 40px 0 0 40px;
+    position: relative;
 }
 
-main>#section1>article,main>#section1>a{
-    margin-left: 70px;
+main>#section1>div *{
+    margin-bottom: 25px;
 }
 
+main>#section1>div>h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+main>#section1>div>p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main>#section1>div>a{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
 
 /* Footer */
 
