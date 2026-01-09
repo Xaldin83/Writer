@@ -105,6 +105,10 @@ main>#section1{
 
 
 main>#section1>div{
+    background: linear-gradient(0.25turn,#0000001A,#00000066);
+}
+
+main>#section1>div>div{
     color: white;
     max-height: 100%;
     max-width: 100%;
@@ -113,24 +117,25 @@ main>#section1>div{
     position: relative;
 }
 
-main>#section1>div *{
+main>#section1>div>div *{
     margin-bottom: 25px;
 }
 
-main>#section1>div>h1{
+main>#section1>div>div>h1{
     font-size: 48px;
     font-weight: 800;
 }
 
-main>#section1>div>p{
+main>#section1>div>div>p{
     font-size: 16px;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 
-main>#section1>div>a{
+main>#section1>div>div>a{
     font-weight: 700;
     font-size: 16px;
-    margin-top: 20px;
+    
 }
 
 /* Footer */
