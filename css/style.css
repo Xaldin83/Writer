@@ -159,6 +159,7 @@ main>#section1>div>div>a{
 /* Section 2 */
 main>#section2{
     margin-top: 100px;
+    
 }
 main>#section2>div{
     display: grid;
@@ -171,6 +172,7 @@ main>#section2>div>div{
     gap: 20px;
     margin: auto;
     margin-bottom: 30px;
+
 }
 
 
@@ -234,3 +236,18 @@ footer>div>div{
 
 /* Responsive */
 
+@media screen and (max-width:1024px){
+   main>#section2>div>div{
+        grid-template-columns: max-content;
+    } 
+}
+
+@media screen and (max-width:767px){
+    main>#section1>div{
+        padding: 0;
+    }
+    
+    main>#section1>div>div{
+        margin: 0;
+    }
+}
