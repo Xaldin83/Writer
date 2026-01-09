@@ -164,3 +164,18 @@ footer>div>div{
 footer a{
     margin: 0;
 }
+
+/* Responsive */
+
+@media screen and (max-width:1024px){
+    header>div{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    main{
+        grid-template-columns: auto ;
+    }
+}
