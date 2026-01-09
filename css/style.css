@@ -100,6 +100,10 @@ header>div>div>a:hover{
 
 /* Main */
 
+
+/* Section 1 */
+
+
 main>#section1{
     margin: auto;
     max-width: 928px;
@@ -145,6 +149,23 @@ main>#section1>div>div>a{
     font-weight: 700;
     font-size: 16px;
     
+}
+
+
+/* Section 2 */
+main>#section2>div{
+    display: grid;
+}
+
+main>#section2>div>div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+main>#section2>div>div>img{
+    width: auto;
+    overflow: hidden;
+    margin-top: -10px;
 }
 
 /* Footer */
