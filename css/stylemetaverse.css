@@ -110,6 +110,7 @@ main{
     flex-direction: column;
     justify-content: center;
     margin: 50px 0;
+    
 }
 
 main>h1{
@@ -120,17 +121,17 @@ main>h1{
 
 main>img{
     object-fit: cover;
-    width: 780px;
-    height: 217px;
+    max-width: 780px;
+    max-height: 220px;
     object-position: 0px -70px;
 }
 
 
 main>div{
     display: grid;
-    grid-template-columns: 883px;
+    grid-template-columns: 100%;
     margin-top: 30px;
-    
+    max-width: 883px;
 }
 
 main>div>h2{
@@ -145,6 +146,8 @@ main>div>p{
     font-size: 16px;
     margin-bottom: 60px;
     line-height: 24px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -167,4 +170,17 @@ footer>div{
 footer>div>div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width:767px){
+    header>div{
+        display: grid;
+        gap:30px    
+    }
+
+    header>div>div{
+        display: grid;
+    }
+
+    
 }
