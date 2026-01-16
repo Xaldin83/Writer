@@ -20,7 +20,6 @@ a{
     background-color: #1AE570;
     border-radius: 24px;
     padding: 20px;
-    font
 }
 
 .ReadMore2{
@@ -48,6 +47,7 @@ header a{
 }
 
 header>div{
+    flex-wrap: wrap;
     max-width: 1280px;
     display: flex;
     margin: 8px auto;
@@ -65,6 +65,7 @@ header>div>article{
     display: flex;
     gap: 36px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header>div>article>a{
@@ -81,6 +82,112 @@ header>div>article>#Login{
 header>div>article>a>img{
     max-width: 40px;
     border-radius: 300px;
+}
+
+header>div>.fa-bars{
+    display: none;
+}
+
+
+/* Main */
+
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main>div{
+    max-width: 512px;
+    margin: auto;
+}
+
+main>div>h1, main>div>h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+main>div>form>p{
+    display: grid;
+    grid-template-columns: 512px;
+    gap: 20px;
+}
+
+main>div>form>p>label{
+    color:#0D1C12;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: max-content;
+}
+
+main>div>form>p>input, main>div>form>p>textarea{
+    background-color: #E8F2ED;
+    width: 100%;
+    color: #4F966E;
+    font-size: 16px;
+    border: none;
+    resize: none;
+    outline: none;
+    &::placeholder{
+        color: #4F966E;
+    }
+}
+
+main>div>#Category{
+    margin-bottom: 20px;
+}
+
+main>div>#Category>button{
+    background-color: #E8F2ED;
+    color: #0D1C12;
+    border-radius: 16px;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    &:focus{
+        background-color: #0D1C12;
+        color: #4F966E;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+main>div>#Publishment *{
+    font-weight: 700;
+}
+
+main>div>#Publishment>#Upload{
+    background-color: #E8F2ED;
+    color: #0D1C12;
+    border-radius: 16px;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    &:focus{
+        background-color: #020302;
+        color: #4F966E;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+main>div>#Publishment{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+main>div>#Publishment>#Publish{
+    background-color: #1AE570;
+     color: #0D1C12;
+    border-radius: 16px;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    &:focus{
+        background-color: #020302;
+        color: #4F966E;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 
@@ -111,4 +218,23 @@ footer>div>div{
 
 footer a{
     margin: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+    header>div>.fa-bars{
+        display: block;
+    }
+
+    header>div>article{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    
+    main>div>form>p>input, main>div>form>p>textarea{
+        max-width: 300px;
+    }
 }
