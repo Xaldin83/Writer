@@ -250,7 +250,10 @@ footer>div>div{
         padding: 0;
     }
 
+
     main>#section1>div>div{
         margin: 0;
+        grid-template-columns: 1fr;
     }
+    
 }
